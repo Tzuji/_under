@@ -62,7 +62,8 @@ a{
 
         position: relative;
         top: -2px;
-        color: rgb(149, 149, 184);
+        color: black;
+        background: white;
     }
 }
 
