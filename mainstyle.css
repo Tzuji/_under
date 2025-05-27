@@ -1,0 +1,98 @@
+body{
+    background: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "ＭＳ Ｐ明朝",serif;
+    color: white;
+}
+
+html{
+    cursor: url("cursor.png") 0 0, auto;
+    overflow: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#mainSection{
+    margin: auto;
+    max-width: 720px;
+    min-width: 320px;
+}
+
+#header{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.tab{
+    padding: 0.5em;
+}
+
+#mainarea{
+    margin-left: 1em;
+    padding: 1em;
+}
+video{
+    max-width: 600px;
+}
+.video{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+        cursor: url("cursor.png") 0 0, auto;
+    
+    &:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    &:hover{
+        &:active{
+            color: white;
+            text-decoration: none;
+        }
+
+        position: relative;
+        top: -2px;
+        color: rgb(149, 149, 184);
+    }
+}
+
+table, th, td{
+    padding: 0.5em;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px white solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  opacity: 1;
+  pointer-events: none;
+  animation: shrinkFall 1.2s steps(8) forwards;
+}
+@keyframes shrinkFall {
+    0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    }
+    100% {
+    transform: translateY(60px) scale(0);
+
+    }
+}

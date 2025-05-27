@@ -1,0 +1,41 @@
+#chara{
+    display: flex;
+    margin: 1em;
+}
+
+#name, #inst , #info , .about{
+    padding: 1em;
+    border-bottom: 1px white solid;
+}
+
+#name, #inst, #info{
+    width: 150px;
+}
+
+.about{
+    max-width: 500px;
+}
+
+.visual{
+    width: 200px;
+}
+
+.utauname{
+    &:hover{
+        position: relative;
+        top: -2px;
+        color: rgb(149, 149, 184);
+    }
+}
+
+.button{
+    border: 1px solid white;
+    padding: 3px;
+    &:hover{
+        position: relative;
+        top: -2px;
+
+        color: black;
+        background: white;
+    }
+}
