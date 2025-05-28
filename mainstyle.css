@@ -93,7 +93,8 @@ th, td{
     opacity: 1;
     }
     100% {
-    transform: translateY(60px) scale(0);
+    transform: translateY(-60px) scale(0);
+    background: blue;
 
     }
 }
