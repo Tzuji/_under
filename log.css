@@ -1,0 +1,36 @@
+#log_dot_imag{
+    width: 180px;
+    image-rendering: pixelated;
+}
+
+#log_hanasu{
+  position: relative;
+  width: fit-content;
+  padding: 0.5em 1em;
+  border: 1px solid white;
+}
+#log_hanasu::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0%;
+  width: 13px;
+  height: 13px;
+  box-sizing: border-box;
+  background-color: black;
+  rotate: -135deg;
+  translate: -50%;
+}
+#log_hanasu::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0%;
+  width: 13px;
+  height: 13px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: white white transparent transparent;
+  rotate: -135deg;
+  translate: -50%;
+}

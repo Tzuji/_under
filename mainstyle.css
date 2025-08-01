@@ -98,3 +98,7 @@ th, td{
 
     }
 }
+
+.flex{
+    display: flex;
+}
