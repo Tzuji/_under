@@ -1,0 +1,31 @@
+.credits{
+    margin: 0.5em;
+    padding: 1em;
+    display: flex;
+    color: black;
+    background: white;
+}
+
+.credits a{
+    color: black;
+    text-decoration: none;
+    cursor: url("cursor.png") 0 0, auto;
+    padding: 3px;
+    
+    &:visited{
+        color: black;
+        text-decoration: none;
+    }
+
+    &:hover{
+        &:active{
+            color: black;
+            text-decoration: none;
+        }
+
+        position: relative;
+        top: -2px;
+        color: white;
+        background: black;
+    }
+}
