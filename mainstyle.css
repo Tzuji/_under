@@ -120,7 +120,7 @@ textarea{
 .tabTitle{
     padding: 2px;
     background: white;
-    border-top-right-radius: 3px;
+    border-top-right-radius: 10px;
     color: black;
 }
 .tabDesign{

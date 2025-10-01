@@ -8,7 +8,7 @@
     <title>ダム底</title>
 </head>
 <body>
-    <audio src="river.mp3" autoplay loop></audio>
+    <audio id="bgm" src="river.mp3" autoplay loop></audio>
     <div id="stalker"></div>
     <div id="mainSection">
 
@@ -44,26 +44,38 @@
             2025/06/05 サイト開設<br>
             <br>
             <br>
-            <div class="draggable" style="left:450px; top:-100px; width: 180px;">
+            <div class="draggable" style="left: 550px; top:-170px; width: 190px;">
+                <div class="tabTitle">██-█-█</div>
+                <div class="tabDesign" style="height: 50px;">
+                    <canvas id="visualizer"></canvas>
+                </div>
+            </div>
+
+            <div class="draggable" style="left:450px; top:-200px; width: 180px;">
                 <div class="tabTitle">link free!</div>
                 <div class="tabDesign">
                     <img src="other/d8831.gif"><br>
                     <textarea><a href="https://tzuji.github.io/_under/"><img src="https://tzuji.github.io/_under/other/d8831.gif"></a></textarea>
                 </div>
             </div>
-            <div class="draggdeco" style="left:450px; top:-470px; color: blue; font-weight: bold;">
+
+            <div class="draggdeco" style="left:450px; top:-570px; color: blue; font-weight: bold; width: 70px;">
                 <p><•)))))><</p>
             </div>
-            <div class="draggdeco" style="left:500px; top:-460px; color: blue; font-weight: bold;">
+            <div class="draggdeco" style="left:500px; top:-560px; color: blue; font-weight: bold; width: 70px;">
                 <p><•)))))><</p>
             </div>
-            <div class="draggdeco" style="left:610px; top:-520px; color: blue; font-weight: bold;">
+            <div class="draggdeco" style="left:610px; top:-620px; color: blue; font-weight: bold; width: 70px;">
                 <p><•)))))><</p>
-            </div>           
+            </div>
+            
+            
+
         </div>
 
         <script src="script/cursor.js"></script>
         <script src="script/moveTab.js"></script>
+        <script src="script/audioVisualizer.js"></script>
         
 </body>
 </html>
