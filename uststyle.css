@@ -29,3 +29,19 @@
         background: black;
     }
 }
+
+details{
+    margin: 0.2em;
+    padding: 0.2em;
+        &:hover{
+        &:active{
+            color: white;
+            text-decoration: none;
+        }
+
+        position: relative;
+        top: -2px;
+        color: black;
+        background: white;
+    }
+}

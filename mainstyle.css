@@ -1,5 +1,5 @@
 body{
-    background: rgb(0, 0, 0);
+    background: black;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ html{
     }
 }
 
-#mainSection{
+#Section{
     margin: auto;
     max-width: 720px;
     min-width: 320px;
@@ -29,6 +29,7 @@ html{
     margin-top: 1em;
     margin-left: 1em;
 }
+
 .tab{
     padding: 0.5em;
 }
@@ -95,7 +96,6 @@ th, td{
     100% {
     transform: translateY(-60px) scale(0);
     background: blue;
-
     }
 }
 
@@ -127,4 +127,8 @@ textarea{
     padding: 1em;
     border: 1px white solid;
     background: black;
+}
+
+.deco{
+    position: relative;
 }
