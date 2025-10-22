@@ -35,9 +35,8 @@ function startVisualizer(audioElement) {
 
         // 波形描画処理
         analyser.getByteTimeDomainData(dataArray);
-
-        ctx.fillStyle = "black";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         ctx.lineWidth = 1;
         ctx.strokeStyle = "white";

@@ -2,8 +2,8 @@ let dotImage = null; //document.getElementById("log_dot");
 let logSound = document.getElementsByClassName("sound");
 let loghanasu = null; //document.getElementById("log_sound_hanasu");
 
-const beforeImage = `<img id="log_dot_imag" src="./imag/log_dot/log_d0.PNG" onmouseover="this.src='./imag/log_dot/log_d1.PNG'" onmouseout="this.src='./imag/log_dot/log_d0.PNG'">`;
-const mabatakiImage = `<img id="log_dot_imag" src="./imag/log_dot/log_d2.PNG">`;
+const beforeImage = `<img id="log_dot_imag" src="./imag/log/log_dot/log_d0.PNG" onmouseover="this.src='./imag/log/log_dot/log_d1.PNG'" onmouseout="this.src='./imag/log/log_dot/log_d0.PNG'">`;
+const mabatakiImage = `<img id="log_dot_imag" src="./imag/log/log_dot/log_d2.PNG">`;
 
 const logImage = ["log_d3.PNG", "log_d4.PNG", "log_d5.PNG"];
 const SampleSound = ["sample_k0.wav", "sample_k1.wav", "sample_m0.wav", "sample_m1.wav", "sample_m2.wav"];
@@ -21,7 +21,7 @@ function log_update(){
 }
 
 function choiceSound(){
-    dotImage.innerHTML = `<img id="log_dot_imag" src="imag/log_dot/${logImage[RandInt(3)]}">`;
+    dotImage.innerHTML = `<img id="log_dot_imag" src="imag/log/log_dot/${logImage[RandInt(3)]}">`;
     soundNum = RandInt(5);
     const audioSrc = `sample/log_samp/${SampleSound[soundNum]}`;
 
