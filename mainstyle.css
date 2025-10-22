@@ -126,9 +126,16 @@ textarea{
 .tabDesign{
     padding: 1em;
     border: 1px white solid;
-    background: black;
 }
 
 .deco{
     position: relative;
+}
+
+img {
+  user-drag: none;      /* Chrome, Safari */
+  -webkit-user-drag: none; /* Safari 旧仕様 */
+  -moz-user-select: none;  /* Firefox */
+  -webkit-user-select: none;
+  user-select: none;
 }

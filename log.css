@@ -4,10 +4,13 @@
 }
 
 #log_hanasu{
+  color: rgb(0, 255, 0);
   position: relative;
   width: fit-content;
   padding: 0.5em 1em;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 255, 0);
+  background: black;
+  width: 110px;
 }
 #log_hanasu::before {
   content: "";
@@ -30,7 +33,7 @@
   height: 13px;
   box-sizing: border-box;
   border: 1px solid;
-  border-color: white white transparent transparent;
+  border-color: rgb(0, 255, 0) rgb(0, 255, 0) transparent transparent;
   rotate: -135deg;
   translate: -50%;
 }
