@@ -41,7 +41,7 @@ const nagori_info = `<div id="chara">
                     <div>
                         <div class="about">風邪ひいたときに作った単独音源。<br>音域によっては中性的にも女性的にも聴こえると思います。</div>
                         <div class="about">
-                            スピーカーとプロジェクターが搭載された謎の機械。<br>ボロいためガムテープで補強されるなど少し雑な修繕がされている。加えて移動機能も無いので結構困っている。<br>
+                            スピーカーとプロジェクターが搭載された謎の機械。<br>外部ケースが古くガムテープで補強されるなど雑な修繕がされている。移動機能も無く自分で動くことも出来ないので結構困っている。<br>
                             プロジェクターで様々なホログラムを映し出すことが出来る。青年期の人間を映すことが多いが、本人曰くこれが本来の姿らしい。
                         </div>
                     </div>
@@ -114,32 +114,35 @@ const log_info = `<div id="chara" style="color:rgb(0,255,0);">
                             : タイピング音<br>子音 :
                             タイピング音,マウスのクリック音,ホワイトノイズ<br><br>癖のある抑揚と無生物音源特有の機械感の強い声です。</div>
                         <div class="about" style="border-bottom: 1px rgb(0,255,0) solid;">
-                            ケーブルがたくさん生えているヒューマノイド。<br>自分が接続出来そうな機械を見つけると喜ぶ。人に限らず積極的にコミュニケーションを取ろうとするためキーボードやマウスを見つけると挨拶する。Bluetoothに憧れを抱いているとか・・・。<br>だいぶ変わってるが悪いヤツではない。たぶん。
+                            出自不明のヒューマノイド。開発経緯や製造元の記録は確認されていない。<br>自身から伸びるケーブルで(勝手に)あらゆる機械への接続を試みている。人に限らず積極的にコミュニケーションを取ろうとするためキーボードやマウスを見つけると挨拶する。<br>だいぶ変わってるが悪いヤツではない。たぶん。
                         </div>
                     </div>
                 </div>
+                
+                
 
-                <div style="height: 100px;">
-                    <div class="deco" style="left:300px; top:-600px; width: 10px; z-index:1">
+                <div style="height: 0px; top: 20px;">
+                    <div class="deco" style="left:300px; top:-580px; width: 10px; z-index:1">
                         <img src="imag/log/log_code/c10221.png" style="width: 500px;">
                     </div>
                     <div style="position: absolute; right:200px; top:0px; width: 10px; z-index:1">
-                        <img src="imag/log/log_code/c10222g.png" style="width: 100px;">
+                        <img src="imag/log/log_code/c10222.png" style="width: 100px;">
                     </div>
-                    <div class="deco" style="left:-200px; top:-900px; width: 10px; transform: rotate(-7deg); z-index:1">
+                    <div class="deco"
+                        style="left:-200px; top: -910px; width: 10px; transform: rotate(-7deg); z-index:1">
                         <img src="imag/log/log_code/c10223.png" style="width: 200px;">
                     </div>
                     <div style="position: absolute; top: -120px; left:-200px; width: 10px; z-index:-1">
                         <img src="imag/log/log_code/c10224.png" style="width: 800px; transform: rotate(-180deg);">
                     </div>
-                    <div class="deco" style="left:-100px; top:-1500px; width: 10px; transform: rotate(5deg); z-index:1">
-                        <img src="imag/log/log_code/c10222.png" style="width: 100px;">
+                    <div class="deco" style="left:-100px; top:-1470px; width: 10px; transform: rotate(5deg); z-index:1">
+                        <img src="imag/log/log_code/c10222g.png" style="width: 100px;">
                     </div>
 
-                    <div class="draggable" style="left:-100px; top:-1300px; width: 180px; z-index:-5px;">
+                    <div class="draggable" style="left:-100px; top:-1500px; width: 180px; z-index:15;">
                         <div class="tabTitle"
                             style="background:black; border: solid 1px rgb(0,255,0); color: rgb(0,255,0);">click!</div>
-                        <div class="tabDesign" style="border-color: rgb(0,255,0); padding: 0px;">
+                        <div class="tabDesign" style="border-color: rgb(0,255,0); padding: 0px; background: black;">
                             <div class="flex">
                                 <span id="log_dot" onclick="log_Onsound()">
                                     <img id="log_dot_imag" src="imag/log_dot/log_d0.PNG"
@@ -152,7 +155,10 @@ const log_info = `<div id="chara" style="color:rgb(0,255,0);">
                             </div>
                         </div>
                     </div>
+                    <canvas id="canvas" style="position: absolute; top: 0px; left: 0px; z-index: -10;"></canvas>
                 </div>
+
+                
 
 
 `;
@@ -178,8 +184,4 @@ const ushio_info = `<div id="chara">
                     </div>
                 </div>
 
-                <div style="height: 10px;">
-                    <div class="deco" style="top: -500px; left: -500px; z-index: -10;">
-                        <img src="imag/free/penga/penga-0298.png" style="width: 1200px; opacity: 0.7;">
-                    </div>
-                </div>`;
+`;
