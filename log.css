@@ -37,3 +37,36 @@
   rotate: -135deg;
   translate: -50%;
 }
+
+#log_sampVo{
+  padding: 0.5em;
+  color: rgb(0,255,0);
+  height: 3em;
+}
+
+.typecursor{
+  	display: inline-block;
+    width: 1px;
+    height: 1em;
+    background-color: #0f0;
+    margin-left: 3px;
+  animation: blink 0.8s steps(1, start) infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.corpimg{
+  position: relative;
+  z-index: 0;
+  &:hover{
+    top: -10px;
+  }
+}
+
+.dot{
+    background-image:radial-gradient(rgb(0,255,0) 1%, transparent 10%);
+}
