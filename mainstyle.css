@@ -120,17 +120,18 @@ textarea{
 
 .tabTitle{
     padding: 2px;
-    background: white;
+    background: black;
     border-top-right-radius: 10px;
-    color: black;
+    color: white;
 }
 .tabDesign{
     padding: 1em;
-    border: 1px white solid;
+    border: 1px black solid;
 }
 
 .deco{
     position: relative;
+    pointer-events: none;
 }
 
 img {
