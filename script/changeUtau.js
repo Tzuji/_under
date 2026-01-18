@@ -95,7 +95,8 @@ const nagori_info = `<div id="chara">
                 </div>               
                     `;
 
-const log_info = `<div id="chara" style="color:rgb(0,255,0);">
+const log_info = `
+                <div id="chara" style="color:rgb(0,255,0);">
                     <div>
                         <div id="name" style="border-bottom: 1px rgb(0,255,0) solid;">接路音ログ<br>Tsugurone Log</div>
                         <div id="info" style="border-bottom: 1px rgb(0,255,0) solid;">製造年月日 : 不明<br>全長 :
@@ -138,8 +139,10 @@ const log_info = `<div id="chara" style="color:rgb(0,255,0);">
                     <div class="deco" style="left:-100px; top:-1470px; width: 10px; transform: rotate(5deg); z-index:1">
                         <img src="imag/log/log_code/c10222g.png" style="width: 100px;">
                     </div>
+                    
+                    <img class="draggable" src="imag/log/LowPoli_log.gif" alt="" style="position: relative; top: -1750px; right: 200px; width: 300px; z-index: 100;">
 
-                    <div class="draggable" style="left:-100px; top:-1500px; width: 180px; z-index:15;">
+                    <div class="draggable" style="left:-100px; top:-1700px; width: 180px; z-index:15;">
                         <div class="tabTitle"
                             style="background:black; border: solid 1px rgb(0,255,0); color: rgb(0,255,0);">click!</div>
                         <div class="tabDesign" style="border-color: rgb(0,255,0); padding: 0px; background: black;">
@@ -155,11 +158,7 @@ const log_info = `<div id="chara" style="color:rgb(0,255,0);">
                             </div>
                         </div>
                     </div>
-                    <canvas id="canvas" style="position: absolute; top: 0px; left: 0px; z-index: -10;"></canvas>
                 </div>
-
-                
-
 
 `;
 

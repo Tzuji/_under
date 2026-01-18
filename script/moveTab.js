@@ -18,3 +18,4 @@ function makeDraggableAll(className) {
 }
 
 makeDraggableAll("draggable");
+
