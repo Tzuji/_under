@@ -19,7 +19,6 @@ function startVisualizer(audioElement) {
     const canvas = document.getElementById("visualizer");
     const ctx = canvas.getContext("2d");
 
-    // 小さいサイズに設定
     canvas.width = 150;
     canvas.height = 50;
 
@@ -30,10 +29,9 @@ function startVisualizer(audioElement) {
     function draw(time) {
         animationId = requestAnimationFrame(draw);
 
-        if (time - lastTime < interval) return; // 間引き
+        if (time - lastTime < interval) return; 
         lastTime = time;
 
-        // 波形描画処理
         analyser.getByteTimeDomainData(dataArray);
         
         ctx.clearRect(0, 0, canvas.width, canvas.height);
