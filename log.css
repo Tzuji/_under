@@ -1,5 +1,5 @@
 #log_dot_imag{
-    width: 180px;
+    width: 178px;
     image-rendering: pixelated;
 }
 
@@ -69,4 +69,44 @@
 
 .dot{
     background-image:radial-gradient(rgb(0,255,0) 1%, transparent 10%);
+}
+
+.button_log{
+    border: 1px solid rgb(0,255,0);
+    padding: 3px;
+    &:hover{
+        position: relative;
+        top: -2px;
+
+        color: black;
+        background: rgb(0,255,0);
+    }
+}
+
+.a_log{
+    color: rgb(0,255,0);
+    text-decoration: none;
+        cursor: url("cursor.png") 0 0, auto;
+    
+    &:visited{
+        color: rgb(0,255,0);
+        text-decoration: none;
+    }
+
+    &:hover{
+        &:active{
+            color: rgb(0,255,0);
+            text-decoration: none;
+        }
+
+        position: relative;
+        top: -2px;
+        color: black;
+        background: rgb(0,255,0);
+    }
+}
+
+#cursor-stalker{
+  background: white;
+  width: 30px;
 }
