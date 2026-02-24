@@ -32,7 +32,7 @@ const nagori_info = `
                         <div id="name">像音ナゴリ<br>Katane Nagori</div>
                         <div id="info">年齢 : 17(本人談)<br>性別 : 不明<br>サイズ：横・奥行30cm,縦8cm<br>重量 : 56kg</div>
                         <div id="inst">→<a href="https://bowlroll.net/file/337141" style="padding:3px"
-                                target="_blank">Download</a><audio id="audio"
+                                target="_blank">近日更新のため非公開中</a><audio id="audio"
                                 src="sample/赤とんぼ_nagori.wav"></audio><br><br>
                             <div>sample : <span onclick="play()" class="button">再生</span> <span onclick="pause()"
                                     class="button">停止</span></div><br>
@@ -161,7 +161,7 @@ const log_info = `
                             1700mm(ヘッドセットを除く)<br>総重量 : 44kg</div>
                         <div id="inst" style="border-bottom: 1px rgb(0,255,0) solid;">→<a class="a_log"
                                 href="https://bowlroll.net/file/337711" style="padding:3px;"
-                                target="_blank">Download</a><audio id="audio" src="sample/赤とんぼ_log.wav"></audio><br><br>
+                                target="_blank">近日更新のため非公開中</a><audio id="audio" src="sample/赤とんぼ_log.wav"></audio><br><br>
                             <div>sample :<span onclick="play()" class="button_log"
                                     style="border: 1px rgb(0,255,0) solid;">再生</span> <span onclick="pause()"
                                     class="button_log" style="border: 1px rgb(0,255,0) solid;">停止</span></div><br>
