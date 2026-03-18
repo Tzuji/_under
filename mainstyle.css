@@ -26,9 +26,9 @@ html{
 }
 
 #header{
+    background: black;
     display: flex;
-    margin-top: 1em;
-    margin-left: 1em;
+    position: fixed;
 }
 
 .tab{
@@ -36,9 +36,10 @@ html{
 }
 
 #mainarea{
-    margin-left: 1em;
+    margin: 1em;
     padding: 1em;
 }
+
 video{
     max-width: 600px;
 }
@@ -140,4 +141,25 @@ img {
   -moz-user-select: none;  /* Firefox */
   -webkit-user-select: none;
   user-select: none;
+}
+
+.nobanner{
+    display: inline-block;
+    color: white;
+    border:dotted 1px white;
+    width: 200px;
+    height: 40px;
+}
+
+#siteURL{
+    position: relative;
+}
+#siteURL:hover{
+    top: -2px;
+}
+.banner{
+    position: relative;
+}
+.banner:hover{
+    top: -2px;
 }

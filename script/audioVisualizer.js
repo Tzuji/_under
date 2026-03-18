@@ -37,7 +37,7 @@ function startVisualizer(audioElement) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         ctx.lineWidth = 1;
-        ctx.strokeStyle = "white";
+        ctx.strokeStyle = "blue";
         ctx.beginPath();
 
         const sliceWidth = canvas.width / bufferLength;
