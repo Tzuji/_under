@@ -145,7 +145,7 @@ const nagori_info = `
                     </div>
                     <!--???-->
                     <div style="position: relative; top: -110px; left: -120px;">
-                        <a href="secret/news.html"><div style="height: 5px; width: 5px;"></div></div></a>
+                        <a href="secret/news.html"><div style="height: 1px; width: 1px;"></div></div></a>
                     </div>`;
 
 const log_info = `
