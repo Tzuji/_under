@@ -19,8 +19,8 @@ function startVisualizer(audioElement) {
     const canvas = document.getElementById("visualizer");
     const ctx = canvas.getContext("2d");
 
-    canvas.width = 150;
-    canvas.height = 50;
+    canvas.width = 80;
+    canvas.height = 30;
 
     let lastTime = 0;
     const fps = 12;
@@ -37,7 +37,7 @@ function startVisualizer(audioElement) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         ctx.lineWidth = 1;
-        ctx.strokeStyle = "blue";
+        ctx.strokeStyle = "skyblue";
         ctx.beginPath();
 
         const sliceWidth = canvas.width / bufferLength;

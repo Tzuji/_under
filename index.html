@@ -13,7 +13,6 @@
 
 <body>
     <audio id="bgm" src="river.mp3" autoplay loop></audio>
-    <div id="stalker"></div>
     <div id="Section">
 
         <div id="header">
@@ -30,11 +29,11 @@
                 <h3 style="font-style: italic;">ダム底 - UTAU音源配布サイト</h3>
                 <br>
                 <div class="video">
-                    <img src="river.gif" style="width: 500px; height: 200px;">
+                    <img src="river.gif" style="width: 500px; height: 200px; filter: url(#disp1);">
                 </div>
                 <br>
                 <br>
-                <div style="background: rgba(0, 0, 0, 0.3);">
+                <div style="background: rgba(0, 0, 0, 0.3); width: 520px;">
                     <h4>現在、【像音ナゴリ】【接路音ログ】を配布しています。</h4>
                     ⚠ pc閲覧推奨です。
                     <br>
@@ -56,16 +55,16 @@
                 <br>
             </div>
 
-            <!--visualizer-->
-            <div class="draggable" style="left: 500px; top:420px; width: 190px; height: 0px;">
-                <div class="tabTitle"></div>
-                <div class="tabDesign" style="height: 35px;">
-                    <canvas id="visualizer"></canvas>
-                </div>
+            <!--radio-->
+            <div class="draggable" style="left: 500px; top:270px; width: 300px; height: 0px;">
+                    <div style="height: 0px;">
+                        <canvas id="visualizer" style="position: relative; top: 130px; left: 155px; transform: rotate(3deg); mix-blend-mode:multiply;"></canvas>
+                    </div>
+                    <img src="imag/free/radio.gif" alt="radio" width="300">
             </div>
 
             <!--banner-->
-            <div class="draggable" style="left:550px; top:480px; width: 240px; height: 0px;">
+            <div class="draggable" style="left:550px; top:450px; width: 240px; height: 0px;">
                 <div class="tabTitle"></div>
                 <div class="tabDesign">
                     <p style="font-size: 12px; margin: 0.5em;">リンクフリーです。直リンクOK</p>
@@ -109,16 +108,60 @@
 
             <!--background-->
             <div style="height: 0px;"> 
-                    <div class="backimg" style="top:120px; left: -190px; z-index: -99; height: 0px;">
-                        <img src="imag/free/photoAC/mo1.png" alt="" width="400px">
+                    <div class="backimg" style="top:140px; left: -250px; z-index: -98; height: 0px;">
+                        <img src="imag/free/photoAC/mo1.png" alt="" width="400px" style="filter: url(#disp2);">
                     </div>
-                    <div class="backimg" style="top:400px; left: 50px; z-index: -100; height: 0px;">
-                        <img src="imag/free/photoAC/mo2.png" alt="" width="600px" height="200px">
+                    <div class="backimg" style="top:400px; left: 250px; z-index: -100; height: 0px;">
+                        <img src="imag/free/photoAC/mo2.png" alt="" width="400px" height="200px" style="filter:brightness(0.7) contrast(1.3) url(#disp3);">
                     </div>
-                    <div class="backimg" style="top:460px; left: 0px; z-index: -98;">
-                        <img src="imag/free/photoAC/mo3.png" alt="" width="450px">
+                    <div class="backimg" style="top:520px; left: 50px; z-index: -98;">
+                        <img src="imag/free/photoAC/mo3.png" alt="" width="450px"  style="filter: url(#disp4);">
                     </div>
             </div>
+
+            <!--displacementmap-->
+            <svg style="position:absolute">
+                <filter id = "disp1">
+                    <feImage href="imag/free/displacement.png" result = "noise"/>
+                    <feDisplacementMap
+                        in = "SourceGraphic"
+                        in2 = "noise"
+                        scale = "-30"
+                        xChannelSelector ="B"
+                        yChannelSelector ="G"
+                    />
+                </filter>
+                <filter id = "disp2">
+                    <feImage href="imag/free/photoAC/mo1.png" result = "noise"/>
+                    <feDisplacementMap
+                        in = "SourceGraphic"
+                        in2 = "noise"
+                        scale = "100"
+                        xChannelSelector ="G"
+                        yChannelSelector ="B"
+                    />
+                </filter>
+                <filter id = "disp3">
+                    <feImage href="imag/free/photoAC/mo2.png" result = "noise"/>
+                    <feDisplacementMap
+                        in = "SourceGraphic"
+                        in2 = "noise"
+                        scale = "100"
+                        xChannelSelector ="G"
+                        yChannelSelector ="B"
+                    />
+                </filter>
+                <filter id = "disp4">
+                    <feImage href="imag/free/photoAC/mo3.png" result = "noise"/>
+                    <feDisplacementMap
+                        in = "SourceGraphic"
+                        in2 = "noise"
+                        scale = "100"
+                        xChannelSelector ="B"
+                    />
+                </filter>
+                
+            </svg>
 
         </div>
 

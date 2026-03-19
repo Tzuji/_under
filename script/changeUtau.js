@@ -4,26 +4,38 @@ function nagori() {
     utauchara.innerHTML = nagori_info;
     audio = document.getElementById("audio");
     makeDraggableAll("draggable");
+
+    if (document.getElementById('log_cursor')) document.getElementById('log_cursor').remove();
 }
 
 function log() {
     utauchara.innerHTML = log_info;
-
-    let log_dot = 0;
-    if (log_dot == 0) {
-        log_update();
-        loopMabataki();
-        log_dot++;
-    }
-
     audio = document.getElementById("audio");
     makeDraggableAll("draggable");
+
+
+    if (!document.querySelector('script[src="script/log_click.js"]')) {
+        const clickTab = document.createElement('script');
+        clickTab.src = "script/log_click.js";
+
+        clickTab.onload = () => {
+            mouse_stalker(); //読み込み待機
+            mabataki();
+        };
+
+        document.getElementById('utau').appendChild(clickTab);
+    } else {
+        mouse_stalker();
+    }
+
 }
 
 function ushio() {
     utauchara.innerHTML = ushio_info;
     audio = document.getElementById("audio");
     makeDraggableAll("draggable");
+
+    if (document.getElementById('log_cursor')) document.getElementById('log_cursor').remove();
 }
 
 const nagori_info = `
@@ -144,11 +156,14 @@ const nagori_info = `
                         </div>
                     </div>
                     <!--???-->
-                    <div style="position: relative; top: -110px; left: -120px;">
-                        <a href="secret/news.html"><div style="height: 1px; width: 1px;"></div></div></a>
+                    <div style="position: relative; top: -124px; left: -105px;">
+                        <a href="secret/news.html"><div style="background:red; height: 1px; width: 1px;"></div></div></a>
                     </div>`;
 
 const log_info = `
+
+                
+                
                 <div id="chara" style="color:rgb(0,255,0); height: 0px;">
                     <div>
                         <div id="name" style="border-bottom: 1px rgb(0,255,0) solid;">接路音ログ<br>Tsugurone Log</div>
@@ -183,6 +198,7 @@ const log_info = `
                 </div>
 
                 <div style="height: 0px;">
+                    <div id="log_cursol"></div>
                     <!--cable-->
                     <div style="height: 0px;">
                         <div class="deco" style="left:300px; top:-290px; width: 10px; z-index:1">
@@ -201,10 +217,7 @@ const log_info = `
                             <img src="imag/log/log_code/c10222g.png" style="width: 100px;">
                         </div>
                     </div>
-                    <!--Wave-->
-                    <div style="position: relative; top: 50px; left: -200px; z-index: -100; height: 0px;">
-                        <img src="imag/log/key/wave.gif" alt="" width="400" height="400">
-                    </div>
+                    
 
                     <!--GIF-->
                     <div style="height: 0px;">
@@ -232,8 +245,8 @@ const log_info = `
                                 <img src="imag/log/eye.gif" alt="" width="120">
                             </div>
                         </div>
-                        <!--center-->
-                        <div class="draggable" style="left:210px; top:-150px; z-index:0; width: 502px;">
+                        <!--Log-->
+                        <div class="draggable" style="left:270px; top:-230px; z-index:0; width: 502px;">
                             <div class="tabTitle"
                                 style="background:black; border: solid 1px rgb(0,255,0); color: rgb(0,255,0);">Tsugurone Log</div>
                             <div class="tabDesign" style="border-color: rgb(0,255,0); padding: 0px; background: none;">
@@ -257,11 +270,11 @@ const log_info = `
                         </div>
                         <!--back-->
                         <div class="draggable" style="left:620px; top:-200px; z-index:15; width: 60px;">
-                            <img src="imag/log/key/key_backspace.png" alt="" width="60">
+                            <img src="imag/log/key/key_backspace.png" alt="" width="60" style="filter: contrast(1.2);">
                         </div>
                         <!--enter-->
                         <div class="draggable" style="left:650px; top:-20px; z-index:15; width: 120px;">
-                            <img src="imag/log/key/key_enter.png" alt="" width="120" onclick="alert('.......。')">
+                            <img src="imag/log/key/key_enter.png" alt="" width="120" style="filter: contrast(1.3);">
                         </div>
                         <!--ctrl-->
                         <div class="draggable"style="left:790px; top:-50px; z-index:15; width: 80px;">
@@ -295,21 +308,30 @@ const log_info = `
                             style="background:black; border: solid 1px rgb(0,255,0); color: rgb(0,255,0);">click!</div>
                         <div class="tabDesign" style="border-color: rgb(0,255,0); padding: 0px; background: black;">
                             <div class="flex">
-                                <span id="log_dot" onclick="log_Onsound()">
+                                <span id="log_dot" onclick="Onsound()">
                                     <img id="log_dot_imag" src="imag/log/log_dot/log_d0.gif"
                                         onmouseover="this.src='imag/log/log_dot/log_d1.gif'"
                                         onmouseout="this.src='imag/log/log_dot/log_d0.gif'">
                                 </span>
-                                　　
-                                <div id="log_sound_hanasu">
-                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!--background-->
+                    <div style="height: 0px;">
+                        <!--Wave-->
+                        <div style="position: relative; top: -170px; left: -200px; z-index: -100; height: 0px;">
+                            <img src="imag/log/key/wave.gif" alt="" width="400" height="400">
+                        </div>
+                        
+                    </div>
+                    
                 </div>
 
-                
-   `;
+
+
+
+            `;
 
 const ushio_info = `<div id="chara">
                     <div>

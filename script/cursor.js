@@ -2,20 +2,14 @@ let lastParticleTime = 0;
 const particleDelay = 50; 
 
 document.addEventListener('mousemove', (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
-
-  stalker.style.left = `${x}px`;
-  stalker.style.top = `${y}px`;
-
   const now = Date.now();
   if (now - lastParticleTime >= particleDelay) {
     lastParticleTime = now;
 
     const particle = document.createElement('div');
     particle.className = 'particle';
-    particle.style.left = `${x}px`;
-    particle.style.top = `${y}px`;
+    particle.style.left = `${e.clientX}px`;
+    particle.style.top = `${e.clientY}px`;
     document.body.appendChild(particle);
 
     setTimeout(() => {
