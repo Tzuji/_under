@@ -163,7 +163,6 @@ const nagori_info = `
 const log_info = `
 
                 
-                
                 <div id="chara" style="color:rgb(0,255,0); height: 0px;">
                     <div>
                         <div id="name" style="border-bottom: 1px rgb(0,255,0) solid;">接路音ログ<br>Tsugurone Log</div>
@@ -183,6 +182,7 @@ const log_info = `
                         <div class="about" style="border-bottom: 1px rgb(0,255,0) solid;">パソコンの周辺機器から生まれた無生物音源。<br>母音
                             : タイピング音<br>子音 :
                             タイピング音,マウスのクリック音,ホワイトノイズ<br><br>癖のある抑揚とノイズ感の強い声です。<br>
+                            本家UTAUでの動作を基準に制作しているためOpenUtauではbre50をかけることをオススメします。<br>
                             <br>
                             <table style="font-size: 12px;">
                                 <tr><th style=" border-bottom: 1px solid rgb(0,255,0);">【特殊音素】</th></tr>
@@ -201,20 +201,32 @@ const log_info = `
                     <div id="log_cursol"></div>
                     <!--cable-->
                     <div style="height: 0px;">
-                        <div class="deco" style="left:300px; top:-290px; width: 10px; z-index:1">
+                        <div class="deco" style="left:300px; top:-290px; width: 10px; z-index:1;">
                             <img src="imag/log/log_code/c10221.png" style="width: 500px;">
                         </div>
-                        <div style="position: absolute; right:200px; top:0px; width: 10px; z-index:1">
+                        <div style="position: absolute; right:200px; top:0px; width: 10px; z-index:1; height: 0px;">
                             <img src="imag/log/log_code/c10222.png" style="width: 100px;">
                         </div>
-                        <div class="deco"                    style="left:-200px; top: -600px; width: 10px; transform: rotate(-7deg); z-index:1">
+                        <div class="deco"                    style="left:-200px; top: -600px; width: 10px; transform: rotate(-7deg); z-index:1; height: 0px;">
                             <img src="imag/log/log_code/c10223.png" style="width: 200px;">
                         </div>
-                        <div style="position: absolute; top: -120px; left:-200px; width: 10px; z-index:-1">
+                        <div style="position: absolute; top: -120px; left:-200px; width: 10px; z-index:-1; height: 0px;">
                             <img src="imag/log/log_code/c10224.png" style="width: 800px; transform: rotate(-180deg);">
                         </div>
-                        <div class="deco" style="left:-100px; top:-1150px; width: 10px; transform: rotate(5deg); z-index:1">
-                            <img src="imag/log/log_code/c10222g.png" style="width: 100px;">
+                        <div class="deco" style="left:-200px; top:-600px; width: 10px; transform: rotate(5deg); z-index:1; height: 0px;">
+                            <img src="imag/log/log_code/c10222g.png" style="width: 100px; filter: brightness(0.8) contrast(1.2);">
+                        </div>
+                        <div class="deco"                    style="left:500px; top: -600px; width: 10px; transform: rotate(-7deg); z-index:1">
+                            <img src="imag/log/log_code/c10223.png" style="width: 200px;">
+                        </div>
+                        <div style="position: relative; top: -1100px; left:550px; width: 10px; z-index:-1; height: 0px;">
+                            <img src="imag/log/log_code/c10224.png" style="width: 800px; transform: rotate(70deg);">
+                        </div>
+                        <div style="position: relative; right:0px; top:-1200px; width: 10px; z-index:-4; height: 0px;">
+                            <img src="imag/log/log_code/c10222.png" style="width: 110px; transform: scale(-1, 1);">
+                        </div>
+                        <div style="position: relative; right:-300px; top:-1200px; width: 10px; z-index:-4; height: 0px;">
+                            <img src="imag/log/log_code/c10223.png" style="width: 140px; transform:rotate(15deg) scale(-1, 1);">
                         </div>
                     </div>
                     
@@ -329,9 +341,8 @@ const log_info = `
                 </div>
 
 
-
-
-            `;
+                
+             `;
 
 const ushio_info = `<div id="chara">
                     <div>
