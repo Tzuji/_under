@@ -22,4 +22,4 @@ function randomDay(r){
     return String(r).padStart(2, '0')
 }
 
-setInterval(() => { dayUpdate() }, 100);
+setInterval(() => { dayUpdate() }, 1000);
