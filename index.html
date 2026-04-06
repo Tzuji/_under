@@ -34,7 +34,9 @@
                 <br>
                 <br>
                 <div style="background: rgba(0, 0, 0, 0.3); width: 520px;">
-                    <h4><s>現在、【像音ナゴリ】【接路音ログ】を配布しています。</s></h4>
+                    <s>
+                        <h4>現在、【像音ナゴリ】【接路音ログ】を配布しています。</h4>
+                    </s>
                     <h4>近日更新のためすべての音源を非公開にしています。</h4>
                     ⚠ pc閲覧推奨です。
                     <br>
@@ -58,7 +60,7 @@
             </div>
 
             <!--radio-->
-            <div class="draggable" style="left: 500px; top:270px; width: 300px; height: 0px;">
+            <div class="draggable" style="left: 500px; top:270px; width: 300px; height: 0px; z-index: 3;">
                     <div style="height: 0px;">
                         <canvas id="visualizer" style="position: relative; top: 130px; left: 155px; transform: rotate(3deg); mix-blend-mode:multiply;"></canvas>
                     </div>
@@ -66,10 +68,10 @@
             </div>
 
             <!--banner-->
-            <div class="draggable" style="left:550px; top:450px; width: 240px; height: 0px;">
+            <div class="draggable" style="left:550px; top:450px; width: 240px; height: 0px; z-index: 4;">
                 <div class="tabTitle"></div>
                 <div class="tabDesign">
-                    <p style="font-size: 12px; margin: 0.5em;">リンクフリーです。直リンクOK</p>
+                    <p style="font-size: 12px; margin: 0.5em;">リンクフリーです。</p>
                     <p style="font-size: 16px; margin: 0.5em; font-style: italic;" onclick="copyText()">ダム底<br><span id="siteURL">https://tzuji.github.io/_under/</span></p>
                     <div style="font-size: 10px;">200*40</div>
                     <img src="other/d20040.gif" alt="200*40" class="banner">
@@ -86,8 +88,9 @@
                 </div>
             </div>
 
+
             <!--fish-->
-            <div style="height: 0px;">
+            <div style="height: 0px; position: relative; z-index: 10;">
                 <div class="draggdeco" style="left:450px; top:270px; color: blue; font-weight: bold; width: 70px;">
                     <p><•)))))><</p>
                 </div>
@@ -119,6 +122,11 @@
                     <div class="backimg" style="top:520px; left: 50px; z-index: -98;">
                         <img src="imag/free/photoAC/mo3.png" alt="" width="450px"  style="filter: url(#disp4);">
                     </div>
+            </div>
+
+            <!--utau-->
+            <div style="height: 0px;">
+                <div id="uta_img"></div>
             </div>
 
             <!--displacementmap-->
@@ -176,6 +184,7 @@
     <script src="script/moveTab.js"></script>
     <script src="script/audioVisualizer.js"></script>
     <script src="script/clock.js"></script>
+    <script src="script/toppageUtau.js"></script>
 
 </body>
 
