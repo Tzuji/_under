@@ -166,7 +166,7 @@ const log_info = `
                 <div id="chara" style="color:rgb(0,255,0); height: 0px;">
                     <div>
                         <div id="name" style="border-bottom: 1px rgb(0,255,0) solid;">接路音ログ<br>Tsugurone Log</div>
-                        <div id="info" style="border-bottom: 1px rgb(0,255,0) solid;">型番：T712-L090BK<br>
+                        <div id="info" style="border-bottom: 1px rgb(0,255,0) solid;">型番：T702-L090BK<br>
                             製造年式 : ████年<br>全長 :
                             1700mm(ヘッドセットを除く)<br>総重量 : 44kg</div>
                         <div id="inst" style="border-bottom: 1px rgb(0,255,0) solid;">→<a class="a_log"
