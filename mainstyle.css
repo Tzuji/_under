@@ -70,6 +70,24 @@ a{
     }
 }
 
+.synopsis
+{
+    display: inline-block;
+    text-decoration: none;
+    cursor: url("cursor.png") 0 0, auto;
+    
+    &:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    &:hover{
+        position: relative;
+        top: 2px;
+        background: none;
+    }
+}
+
 table, th, td{
     padding: 0.5em;
     border-collapse: collapse;
@@ -103,13 +121,6 @@ th, td{
 
 .flex{
     display: flex;
-}
-
-textarea{
-    color: white;
-    background: black;
-    font-family: "ＭＳ Ｐ明朝",serif;
-    border-radius: 0%;
 }
 
 .draggable{
