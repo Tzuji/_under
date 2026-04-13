@@ -85,6 +85,9 @@ function mouse_stalker(){
         cursol.id = "log_cursor";
         cursol.src = "imag/log/key/cursol.png";
         cursol.width = "15";
+        cursol.onclick = function() {
+            alert('.........。');
+            };
         document.addEventListener('mousemove', function (e) {
             const x = e.clientX ;
             const y = e.clientY ;
