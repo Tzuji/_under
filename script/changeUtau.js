@@ -356,10 +356,6 @@ const log_info = `
                         <div class="draggable" style="left:800px; top:-50px; z-index:15; width: 80px;">
                             <img src="imag/log/key/key_ctrl.png" alt="" width="80">
                         </div>
-                        <!--badge-->
-                        <div class="draggable" style="left:820px; top:-0px; z-index:15; width: 30px;">
-                            <img src="imag/log/key/mouse_i.png" alt="" width="30">
-                        </div>
                         <!--cursol-->
                         <div class="draggable" style="left:20px; top:20px; z-index:15; width: 15px;">
                             <img src="imag/log/key/cursol.png" alt="" width="15">
