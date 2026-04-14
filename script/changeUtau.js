@@ -369,7 +369,7 @@ const log_info = `
                             <img src="imag/log/key/cursol.png" alt="" width="15">
                         </div>
                         <!--cursol-->
-                        <div class="draggable" style="left:580px; top:-110px; z-index:15; width: 15px;">
+                        <div class="draggable" style="left:620px; top:-110px; z-index:15; width: 15px;">
                             <img src="imag/log/key/cursol.png" alt="" width="15">
                         </div>
                     </div>
