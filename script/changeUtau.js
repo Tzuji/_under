@@ -405,7 +405,7 @@ const log_info = `
 const ushio_info = `<div id="chara">
                     <div>
                         <div id="name">鯨歌うしお<br>Geika Ushio</div>
-                        <div id="info">年齢 : おぼえてない<br>性別 : メス<br>全長 : 約4m<br>体重 : ひみつ</div>
+                        <div id="info">年齢 : おぼえてない<br>性別 : メス<br>全長 : 約5m<br>体重 : ひみつ</div>
                         <div id="inst">→<a href="" style="padding:3px" target="_blank"></a><audio id="audio"
                                 src="sample/赤とんぼ_ushio.wav"></audio><br><br>
                             <div>sample :<span onclick="play()" class="button">再生</span> <span onclick="pause()"
