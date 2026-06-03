@@ -369,7 +369,7 @@ const log_info = `
                             <img src="imag/log/key/cursol.png" alt="" width="15">
                         </div>
                         <!--cursol-->
-                        <div class="draggable" style="left:620px; top:-110px; z-index:15; width: 15px;">
+                        <div class="draggable" style="left:580px; top:-110px; z-index:15; width: 15px;">
                             <img src="imag/log/key/cursol.png" alt="" width="15">
                         </div>
                     </div>
@@ -406,7 +406,7 @@ const ushio_info = `<div id="chara">
                     <div>
                         <div id="name">鯨歌うしお<br>Geika Ushio</div>
                         <div id="info">年齢 : おぼえてない<br>性別 : メス<br>全長 : 約5m<br>体重 : ひみつ</div>
-                        <div id="inst">→<a href="" style="padding:3px" target="_blank"></a><audio id="audio"
+                        <div id="inst">→<a href="https://bowlroll.net/file/354376" style="padding:3px" target="_blank">Download</a><audio id="audio"
                                 src="sample/赤とんぼ_ushio.wav"></audio><br><br>
                             <div>sample :<span onclick="play()" class="button">再生</span> <span onclick="pause()"
                                     class="button">停止</span></div><br>
@@ -422,13 +422,13 @@ const ushio_info = `<div id="chara">
                                         <th style=" border-bottom: 1px solid white;">【特殊音素】</th>
                                     </tr>
                                     <tr>
-                                        <th style="border-bottom: none;"></th>
-                                        <td style="border-bottom: none;"></td>
+                                        <th style="border-bottom: none;">息</th>
+                                        <td style="border-bottom: none;">br1,br2,br3,br4</td>
                                     </tr>
                                 </table>
                                 <div style="text-align: center;">
                                     <div style="font-size: 12px; font-weight: bold;">【立ち絵+設定画】</div>
-                                    <a class="synopsis" href="" onclick="alert('準備中🐋')">
+                                    <a class="synopsis" href="other/鯨歌うしお_資料.zip" download onclick="alert('配布資料を保存しますか？🐋')">
                                         <img src="imag/ushio/ushio_file.png" alt=""></a>
                                 </div>
                             </div>
