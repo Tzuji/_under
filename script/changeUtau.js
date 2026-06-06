@@ -428,7 +428,7 @@ const ushio_info = `<div id="chara">
                                 </table>
                                 <div style="text-align: center;">
                                     <div style="font-size: 12px; font-weight: bold;">【立ち絵+設定画】</div>
-                                    <a class="synopsis" href="other/鯨歌うしお_資料.zip" download onclick="alert('配布資料を保存しますか？🐋')">
+                                    <a class="synopsis" href="other/鯨歌うしお_資料.zip" download onclick="return confirm('配布資料を保存しますか？🐋')">
                                         <img src="imag/ushio/ushio_file.png" alt=""></a>
                                 </div>
                             </div>
