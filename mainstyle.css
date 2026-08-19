@@ -11,7 +11,7 @@ body{
 
 html{
     cursor: url("cursor.png") 0 0, auto;
-    overflow: scroll;
+    overflow-y: scroll;
     scrollbar-width: none; 
     -ms-overflow-style: none;
     ::-webkit-scrollbar {
@@ -100,13 +100,14 @@ th, td{
 }
 
 .particle {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: white;
-  opacity: 1;
-  pointer-events: none;
-  animation: shrinkFall 1.2s steps(8) forwards;
+    position: fixed;
+    pointer-events: none;
+    width: 6px;
+    height: 6px;
+    background: white;
+    opacity: 1;
+    pointer-events: none;
+    animation: shrinkFall 1.2s steps(8) forwards;
 }
 @keyframes shrinkFall {
     0% {
